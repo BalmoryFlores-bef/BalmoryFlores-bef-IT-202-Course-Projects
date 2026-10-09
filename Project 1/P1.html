@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>IT 202 Project 1</title>
+	<link rel="stylesheet" href="P1style.css">
+	<script type = "text/javascript" src = "P1java.js"></script> 
+</head>
+
+<body>
+
+	<div class = "tableMain">
+	<h1>Moving On Up</h1>
+	
+	<p>Moving Representative's First Name:</p>
+ 	<input type ="text" id = "fName" name = "firstName" placeholder = "Example: John"></input>
+	<label for = "fName">Required</label>
+
+	<p>Moving Representative's Last Name:</p>
+ 	<input type ="text" id = "lName" name = "lastName" placeholder = "Example: Johnson"></input>
+	<label for = "lName">Required</label>
+
+	<p>Moving Representative's Password:</p>
+
+ 	<input type ="password" id = "pwd" name = "password" placeholder = "Example: $m0vinG"></input>
+	<span class = "eye" onclick="toggle()">👁</span>
+	<label for = "pwd">Required</label>
+
+	<p>Moving Representative's ID:</p>
+ 	<input type ="text" id = "identity" name = "identity" placeholder = "Example: 1020"></input>
+	<label for = "identity">Required</label>
+
+	<p>Moving Representative's Phone Number:</p>
+ 	<input type ="text" id = "phoNum" name = "phoneNumber" placeholder = "Example: 555-555-5555 ext 555"></input>
+	<label for = "PhoNum">Required</label>
+
+	<p>Moving Representative's Email:</p>
+ 	<input type ="text" id = "Email" name = "Email" placeholder = "Example: john@MC.com"></input>
+
+	<input type="checkbox" id = "chBox"></input>
+	<label for = "Email" id = "chbLabel">Check the box to request an Email Confirmation</label>
+
+	<p>Select Transaction</p>
+	<select class = "optClass">
+  	<option id="op1" name = "option1">Search A Moving Representative's Accounts</option>
+	<option id="op2" name = "option2">Book A Client's Moving Event</option>
+	<option id="op3" name = "option3">Cancel A Client's Moving Event</option>
+	<option id="op4" name = "option4">Request Moving Services</option>
+	<option id="op5" name = "option5">Request Additional Moving Services</option>
+	<option id="op6" name = "option6">Create A New Client</option>
+	</select>
+
+	<button type="button" id = "rButton" name = "resetButton" onclick = "resetForm()">Reset</button>
+	<button type="button" id = "sButton" name = "submitButton" onclick = "validate()">Submit</button>
+	</div>
+</body>
+</html>
